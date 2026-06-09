@@ -1,0 +1,26 @@
+security:
+  require_obfuscation: false
+  block_dotenv: true
+  block_debug_logs: true
+  block_hardcoded_secrets: true
+
+architecture:
+  forbid_feature_to_feature_imports: true
+  enforce_layer_direction: true
+  feature_directory: features
+  layers:
+    - domain
+    - data
+    - presentation
+
+build:
+  max_apk_size_mb: 50
+  max_aab_size_mb: 100
+  require_signing: false
+  block_cleartext_traffic: true
+
+assets:
+  max_image_size_kb: 1024
+
+dependencies:
+  warn_on_hosted_unpinned: true

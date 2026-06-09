@@ -1,0 +1,12 @@
+name: guardian_clean_app
+publish_to: none
+
+environment:
+  sdk: ">=3.11.5 <4.0.0"
+
+dependencies:
+  http: ^1.2.0
+
+flutter:
+  assets:
+    - assets/logo.txt

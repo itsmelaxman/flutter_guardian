@@ -1,0 +1,19 @@
+name: guardian_sample_app
+publish_to: none
+
+environment:
+  sdk: ">=3.11.5 <4.0.0"
+
+dependencies:
+  http: any
+  beta_package: ^1.0.0-dev.1
+  local_design_system:
+    path: ../local_design_system
+  remote_tools:
+    git:
+      url: https://example.com/flutter/remote_tools.git
+
+flutter:
+  assets:
+    - assets/duplicate_a.txt
+    - assets/unused.png

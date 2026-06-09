@@ -1,0 +1,35 @@
+# Dart and Flutter
+.dart_tool/
+.packages
+pubspec.lock
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Guardian generated reports
+guardian-report.json
+guardian-report.html
+apps/**/guardian-report.json
+apps/**/guardian-report.html
+apps/**/lib/generated/
+
+# Local secrets
+.env
+.env.*
+
+# Keep the intentionally unsafe sample fixture tracked.
+!apps/guardian_sample_app/.env
+!apps/guardian_sample_app/.env.*
+
+# Private planning and architecture notes.
+internal_docs/
+internal_docs/plan/

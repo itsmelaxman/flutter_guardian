@@ -1,0 +1,116 @@
+# Flutter Guardian
+
+Flutter Guardian is a CI-first governance platform for Flutter applications.
+
+It helps teams enforce:
+
+- security rules
+- architecture boundaries
+- dependency safety
+- asset health
+- build readiness checks
+
+Flutter Guardian is not a UI framework or runtime SDK. It runs before release and returns CI-friendly exit codes.
+
+## Installation
+
+Activate globally after publishing:
+
+```bash
+dart pub global activate flutter_guardian
+```
+
+Or add it as a development dependency:
+
+```yaml
+dev_dependencies:
+  flutter_guardian: ^1.0.0
+```
+
+From this repository:
+
+```bash
+dart pub get
+dart run flutter_guardian audit
+```
+
+## Usage
+
+```bash
+flutter_guardian audit
+```
+
+From source:
+
+```bash
+dart run flutter_guardian audit
+```
+
+## Policy
+
+Create `guardian.yaml` in your Flutter app root:
+
+```yaml
+security:
+  require_obfuscation: true
+  block_dotenv: true
+  block_debug_logs: true
+
+architecture:
+  forbid_feature_to_feature_imports: true
+
+build:
+  max_apk_size_mb: 50
+```
+
+## What It Checks
+
+- Security issues
+- Architecture violations
+- Unsafe dependency constraints
+- Duplicate or oversized assets
+- Build configuration problems
+- Missing release safeguards
+
+## Output
+
+Flutter Guardian produces:
+
+- `guardian-report.json`
+- `guardian-report.html`
+- exit code `0` for pass
+- exit code `1` for fail
+
+## Config Generation
+
+Generate compile-time Dart config from `.env`, YAML, or JSON:
+
+```bash
+flutter_guardian generate \
+  --from .env \
+  --out lib/generated/app_env.dart \
+  --class AppEnv
+```
+
+Existing output files are not overwritten unless `--force` is passed.
+
+## Modules
+
+- `guardian_core`
+- `guardian_cli`
+- `guardian_security`
+- `guardian_architecture`
+- `guardian_dependencies`
+- `guardian_assets`
+- `guardian_generator`
+- `guardian_reports`
+
+## Docs
+
+- [User Guide](doc/USER_GUIDE.md)
+- [Testing Guide](doc/TESTING.md)
+- [Policy Example](doc/policy.example.yaml)
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).

@@ -1,0 +1,32 @@
+name: guardian_cli
+description: Command line interface for Flutter Guardian release governance.
+version: 1.0.0
+publish_to: none
+
+homepage: https://github.com/itsmelaxman/flutter_guardian
+repository: https://github.com/itsmelaxman/flutter_guardian.git
+issue_tracker: https://github.com/itsmelaxman/flutter_guardian/issues
+
+environment:
+  sdk: ^3.11.5
+resolution: workspace
+
+dependencies:
+  guardian_architecture:
+    path: ../guardian_architecture
+  guardian_assets:
+    path: ../guardian_assets
+  guardian_core:
+    path: ../guardian_core
+  guardian_dependencies:
+    path: ../guardian_dependencies
+  guardian_generator:
+    path: ../guardian_generator
+  guardian_reports:
+    path: ../guardian_reports
+  guardian_security:
+    path: ../guardian_security
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6

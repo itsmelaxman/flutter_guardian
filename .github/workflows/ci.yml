@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Check formatting
+        run: dart format --set-exit-if-changed .
+
+      - name: Analyze packages
+        run: dart run melos exec -- dart analyze .
+
+      - name: Test packages
+        run: dart run melos exec -- dart test
+
+      - name: Audit clean sample
+        run: |
+          dart run flutter_guardian audit \
+            --project-root apps/guardian_clean_app \
+            --json apps/guardian_clean_app/guardian-report.json \
+            --html apps/guardian_clean_app/guardian-report.html
+
+      - name: Audit unsafe sample should fail
+        run: |
+          set +e
+          dart run flutter_guardian audit \
+            --project-root apps/guardian_sample_app \
+            --json apps/guardian_sample_app/guardian-report.json \
+            --html apps/guardian_sample_app/guardian-report.html
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            echo "guardian_sample_app was expected to fail but passed"
+            exit 1
+          fi
+          echo "guardian_sample_app failed as expected"
+
+      - name: Generate config sample
+        run: |
+          dart run flutter_guardian generate \
+            --from apps/guardian_clean_app/config/app_env.yaml \
+            --out apps/guardian_clean_app/lib/generated/app_env.dart \
+            --class AppEnv
