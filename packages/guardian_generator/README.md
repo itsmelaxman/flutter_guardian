@@ -8,4 +8,4 @@ Converts `.env`, YAML, or JSON inputs into Dart classes with `static const` valu
 dart run flutter_guardian generate --from .env --out lib/generated/app_env.dart
 ```
 
-See the root [README](../../README.md) and [user guide](../../doc/USER_GUIDE.md).
+See the root [README](https://github.com/itsmelaxman/flutter_guardian/blob/main/README.md) and [User Guide](https://github.com/itsmelaxman/flutter_guardian/blob/main/doc/USER_GUIDE.md).
