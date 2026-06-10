@@ -1,7 +1,6 @@
 name: flutter_guardian
 description: Release governance, architecture enforcement, and build intelligence for Flutter apps.
 version: 1.0.1
-publish_to: none
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git
@@ -11,8 +10,7 @@ environment:
   sdk: ">=3.11.5 <4.0.0"
 
 dependencies:
-  guardian_cli:
-    path: packages/guardian_cli
+  guardian_cli: ^1.0.1
 
 dev_dependencies:
   melos: ^7.8.1

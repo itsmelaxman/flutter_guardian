@@ -1,7 +1,6 @@
 name: guardian_security
 description: Static AST-powered security analyzer for detecting vulnerabilities in Flutter apps.
-version: 1.0.0
-publish_to: none
+version: 1.0.1
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git
@@ -13,8 +12,7 @@ resolution: workspace
 
 dependencies:
   analyzer: ^8.4.0
-  guardian_core:
-    path: ../guardian_core
+  guardian_core: ^1.0.1
 
 dev_dependencies:
   lints: ^6.0.0

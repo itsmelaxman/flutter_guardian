@@ -1,7 +1,6 @@
 name: guardian_dependencies
 description: Dependency health analyzer for identifying outdated, vulnerable, or misconfigured packages.
-version: 1.0.0
-publish_to: none
+version: 1.0.1
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git
@@ -12,8 +11,7 @@ environment:
 resolution: workspace
 
 dependencies:
-  guardian_core:
-    path: ../guardian_core
+  guardian_core: ^1.0.1
   yaml: ^3.1.3
 
 dev_dependencies:

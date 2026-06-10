@@ -1,7 +1,6 @@
 name: guardian_generator
 description: Compile-time Dart configuration generator for Flutter Guardian policies and settings.
-version: 1.0.0
-publish_to: none
+version: 1.0.1
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git
