@@ -1,5 +1,9 @@
 # Flutter Guardian
 
+[![Pub](https://img.shields.io/pub/v/flutter_guardian.svg)](https://pub.dartlang.org/packages/flutter_guardian) 
+[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue)](https://github.com/itsmelaxman/flutter_guardian/blob/master/LICENSE)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/itsmelaxman/flutter_guardian.svg)](https://github.com/itsmelaxman/flutter_guardian)
+
 Flutter Guardian is a CI-first governance platform for Flutter applications.
 
 It helps teams enforce:
