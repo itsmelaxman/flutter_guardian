@@ -1,6 +1,6 @@
 name: flutter_guardian
 description: Release governance, architecture enforcement, and build intelligence for Flutter apps.
-version: 1.0.0
+version: 1.0.1
 publish_to: none
 
 homepage: https://github.com/itsmelaxman/flutter_guardian

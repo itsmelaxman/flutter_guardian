@@ -24,7 +24,7 @@ Or add it as a development dependency:
 
 ```yaml
 dev_dependencies:
-  flutter_guardian: ^1.0.0
+  flutter_guardian: ^1.0.1
 ```
 
 From this repository:
@@ -105,11 +105,15 @@ Existing output files are not overwritten unless `--force` is passed.
 - `guardian_generator`
 - `guardian_reports`
 
+## Example
+
+- [Flutter Guardian Example](https://github.com/itsmelaxman/flutter_guardian/blob/main/example/flutter_guardian_example.dart)
+
 ## Docs
 
-- [User Guide](doc/USER_GUIDE.md)
-- [Testing Guide](doc/TESTING.md)
-- [Policy Example](doc/policy.example.yaml)
+- [User Guide](https://github.com/itsmelaxman/flutter_guardian/blob/main/doc/USER_GUIDE.md)
+- [Testing Guide](https://github.com/itsmelaxman/flutter_guardian/blob/main/doc/TESTING.md)
+- [Policy Example](https://github.com/itsmelaxman/flutter_guardian/blob/main/doc/policy.example.yaml)
 
 ## License
 

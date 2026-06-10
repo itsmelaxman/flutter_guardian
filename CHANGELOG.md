@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Added a root package example at `example/flutter_guardian_example.dart`.
+- Updated README and docs index links so user guides and policy examples are directly pressable from package pages.
+
 ## 1.0.0
 
 - Added the `flutter_guardian audit` CLI flow.
