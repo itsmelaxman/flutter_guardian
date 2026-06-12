@@ -1,6 +1,6 @@
 name: guardian_core
 description: Shared policy, report, scanner, and analyzer contracts for Flutter Guardian.
-version: 1.0.1
+version: 1.0.2
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git

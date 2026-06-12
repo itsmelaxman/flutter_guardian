@@ -1,6 +1,6 @@
 name: guardian_reports
 description: JSON and HTML report writers for analysis and governance reports in Flutter Guardian.
-version: 1.0.1
+version: 1.0.2
 
 homepage: https://github.com/itsmelaxman/flutter_guardian
 repository: https://github.com/itsmelaxman/flutter_guardian.git
@@ -11,7 +11,7 @@ environment:
 resolution: workspace
 
 dependencies:
-  guardian_core: ^1.0.1
+  guardian_core: ^1.0.2
 
 dev_dependencies:
   lints: ^6.0.0
